@@ -1,3 +1,4 @@
+
 DEVICE_PATH := device/lenovo/a2010
 VENDOR_PATH := vendor/lenovo/a2010
 
@@ -83,11 +84,12 @@ TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Filesystem
-TARGET_USERIMAGES_USE_EXT4:=true
+TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Camera
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
 
 #recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
