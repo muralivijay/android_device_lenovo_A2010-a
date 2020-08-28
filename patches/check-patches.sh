@@ -2,6 +2,9 @@ cd ../../../..
 cd frameworks/av
 git apply -v --check ../../device/lenovo/a2010/patches/frameworks_av/0001-Disable-usage-of-get_capture_position.patch
 cd ../..
+cd frameworks/native
+git apply -v --check ../../device/lenovo/a2010/patches/frameworks_native/0003-be-compatible-with-MTK-Lollipop-blobs.patch
+cd ../..
 cd system/core
 git apply -v --check ../../device/lenovo/a2010/patches/system_core/0001-Remove-CAP_SYS_NICE-from-surfaceflinger.patch
 git apply -v --check ../../device/lenovo/a2010/patches/system_core/0001-fix-ifx-thermal-spaming.patch
