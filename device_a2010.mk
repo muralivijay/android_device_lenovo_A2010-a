@@ -95,7 +95,8 @@ PRODUCT_PACKAGES += \
 
 # libshims
 PRODUCT_PACKAGES += \
-   libshim_mmsdk
+   libshim_mmsdk \
+   libshim_wvm
 
 # Perf
 PRODUCT_PACKAGES += \

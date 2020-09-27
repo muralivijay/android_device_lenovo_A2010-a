@@ -149,7 +149,7 @@ BOARD_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
 # Symlink
-TARGET_LDPRELOAD += libmtk_symbols.so:libshim_mmsdk.so
+TARGET_LDPRELOAD += libmtk_symbols.so:libshim_mmsdk.so:libshim_wvm.so
 TARGET_LD_SHIM_LIBS := \
         /system/lib/libmmsdkservice.feature.so|libshim_mmsdk.so
 
