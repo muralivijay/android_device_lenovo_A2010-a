@@ -181,7 +181,7 @@ lib/libcvsd_mtk.so
 lib/libcam.metadata.so
 lib/libspeech_enh_lib.so
 lib/libcamdrv.so
-lib/libcameracustom.so
+-lib/libcameracustom.so
 lib/libcam_mmp.so
 lib/libblisrc32.so
 lib/libmtk_mmutils.so

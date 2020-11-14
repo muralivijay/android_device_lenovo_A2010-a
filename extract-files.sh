@@ -51,6 +51,29 @@ function extract() {
     done
 }
 
+function patch_sym() {
+    if [ $# -eq 0 ]
+      then
+        echo "- No arguments supplied!"
+    fi
+
+    if [ $(expr length $1) != $(expr length $2) ]
+      then
+        echo "- Symbols length doesn't match: $(expr length $1) vs $(expr length $2)!"
+        return
+    fi
+
+    MATCH=$(strings ${3} | grep ${1})
+    if [ $? != 0 ]
+      then
+        echo "- Couldn't find ${1}..."
+        return
+    fi
+
+    echo "- Patching ${3}: ${1} --> ${2}"
+    sed -i s/$1/${2}/g ${3}
+}
+
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $BASE/*
 
@@ -58,3 +81,7 @@ rm -rf $BASE/*
 extract ../../$VENDOR/$DEVICE/proprietary-files.txt $BASE
 
 ./setup-makefiles.sh
+
+# Prepare the camera wrapper
+patch_sym libcam.halsensor.so libcam2halsensor.so ${BASE}/lib/libcam.halsensor.so
+mv ${BASE}/lib/libcam.halsensor.so ${BASE}/lib/libcam2halsensor.so

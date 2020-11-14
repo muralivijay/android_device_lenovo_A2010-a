@@ -85,7 +85,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Camera2
+    Camera2 \
+    libcam.halsensor
 
 # RIL
 PRODUCT_PACKAGES += \
