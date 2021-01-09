@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEVICE=A2010-a
+DEVICE=a2010
 VENDOR=lenovo
 
 OUTDIR=vendor/$VENDOR/$DEVICE

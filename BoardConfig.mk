@@ -1,5 +1,5 @@
-DEVICE_PATH := device/Lenovo/A2010-a
-VENDOR_PATH := vendor/Lenovo/A2010-a
+DEVICE_PATH := device/lenovo/a2010
+VENDOR_PATH := vendor/lenovo/a2010
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
@@ -62,8 +62,8 @@ BOARD_RAMDISK_OFFSET := 0x04000000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board B3502_AC50CO_3M
 #in case we want to build kernel from source
 # uncomment the following lines
-#TARGET_KERNEL_SOURCE := kernel/Lenovo/A2010-a
-#TARGET_KERNEL_CONFIG := A2010-a_debug_defconfig
+#TARGET_KERNEL_SOURCE := kernel/lenovo/a2010
+#TARGET_KERNEL_CONFIG := a2010_debug_defconfig
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-android-
 #BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 # end of commented lines
@@ -94,7 +94,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := A2010-a
+TARGET_OTA_ASSERT_DEVICE := a2010
 
 #system.prop
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
@@ -121,7 +121,7 @@ BOARD_USES_MTK_HARDWARE := true
 MTK_HARDWARE := true
 
 # Display
-BOARD_EGL_CFG := /device/lenovo/A2010-a/egl.cfg
+BOARD_EGL_CFG := /device/lenovo/a2010/egl.cfg
 USE_OPENGL_RENDERER := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true

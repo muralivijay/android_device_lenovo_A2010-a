@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export DEVICE=A2010-a
+export DEVICE=a2010
 export VENDOR=lenovo
 
 if [ $# -eq 0 ]; then

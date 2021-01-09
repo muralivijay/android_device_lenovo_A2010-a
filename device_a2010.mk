@@ -1,4 +1,4 @@
-$(call inherit-product-if-exists, vendor/Lenovo/A2010-a/A2010-a-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/a2010/a2010-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # The gps config appropriate for this device
@@ -14,7 +14,7 @@ $(call inherit-product, build/target/product/aosp_arm64.mk)
 endif
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += device/Lenovo/A2010-a/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lenovo/a2010/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
@@ -25,39 +25,39 @@ PRODUCT_DEFAULT_REGION   := EG
 
 # Prebuilt Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/Lenovo/A2010-a/prebuilt/Image.gz-dtb
+    LOCAL_KERNEL := device/lenovo/a2010/prebuilt/Image.gz-dtb
 else
     LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/Lenovo/A2010-a/rootdir/init.rc:root/init.rc \
-    device/Lenovo/A2010-a/rootdir/init.target.rc:root/init.target.rc \
-    device/Lenovo/A2010-a/rootdir/init.mt6735.rc:root/init.mt6735.rc \
-    device/Lenovo/A2010-a/rootdir/init.ssd.rc:root/init.ssd.rc \
-    device/Lenovo/A2010-a/rootdir/init.xlog.rc:root/init.xlog.rc \
-    device/Lenovo/A2010-a/rootdir/init.usb.rc:root/init.usb.rc \
-    device/Lenovo/A2010-a/rootdir/init.mt6735.usb.rc:root/init.mt6735.usb.rc \
-    device/Lenovo/A2010-a/rootdir/init.aee.rc:root/init.aee.rc \
-    device/Lenovo/A2010-a/rootdir/init.project.rc:root/init.project.rc \
-    device/Lenovo/A2010-a/rootdir/init.modem.rc:root/init.modem.rc \
-    device/Lenovo/A2010-a/rootdir/init.trace.rc:root/init.trace.rc \
-    device/Lenovo/A2010-a/rootdir/fstab.mt6735:root/fstab.mt6735 \
-    device/Lenovo/A2010-a/rootdir/fstab.swap:root/fstab.swap \
-    device/Lenovo/A2010-a/rootdir/ueventd.rc:root/ueventd.rc
+    device/lenovo/a2010/rootdir/init.rc:root/init.rc \
+    device/lenovo/a2010/rootdir/init.target.rc:root/init.target.rc \
+    device/lenovo/a2010/rootdir/init.mt6735.rc:root/init.mt6735.rc \
+    device/lenovo/a2010/rootdir/init.ssd.rc:root/init.ssd.rc \
+    device/lenovo/a2010/rootdir/init.xlog.rc:root/init.xlog.rc \
+    device/lenovo/a2010/rootdir/init.usb.rc:root/init.usb.rc \
+    device/lenovo/a2010/rootdir/init.mt6735.usb.rc:root/init.mt6735.usb.rc \
+    device/lenovo/a2010/rootdir/init.aee.rc:root/init.aee.rc \
+    device/lenovo/a2010/rootdir/init.project.rc:root/init.project.rc \
+    device/lenovo/a2010/rootdir/init.modem.rc:root/init.modem.rc \
+    device/lenovo/a2010/rootdir/init.trace.rc:root/init.trace.rc \
+    device/lenovo/a2010/rootdir/fstab.mt6735:root/fstab.mt6735 \
+    device/lenovo/a2010/rootdir/fstab.swap:root/fstab.swap \
+    device/lenovo/a2010/rootdir/ueventd.rc:root/ueventd.rc
     
 # system inits
 PRODUCT_COPY_FILES += \
-    device/Lenovo/A2010-a/prebuilt/system/etc/init/audioserver.rc:system/etc/init/audioserver.rc \
-    device/Lenovo/A2010-a/prebuilt/system/etc/init/mediacodec.rc:system/etc/init/mediacodec.rc \
-    device/Lenovo/A2010-a/prebuilt/system/etc/init/cameraserver.rc:system/etc/init/cameraserver.rc \
-    device/Lenovo/A2010-a/prebuilt/system/etc/init/rild.rc:system/etc/init/rild.rc
+    device/lenovo/a2010/prebuilt/system/etc/init/audioserver.rc:system/etc/init/audioserver.rc \
+    device/lenovo/a2010/prebuilt/system/etc/init/mediacodec.rc:system/etc/init/mediacodec.rc \
+    device/lenovo/a2010/prebuilt/system/etc/init/cameraserver.rc:system/etc/init/cameraserver.rc \
+    device/lenovo/a2010/prebuilt/system/etc/init/rild.rc:system/etc/init/rild.rc
     
 # Media
 PRODUCT_COPY_FILES += \
-    device/Lenovo/A2010-a/configs/media_profiles.xml:system/etc/media_profiles.xml \
-    device/Lenovo/A2010-a/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    device/lenovo/a2010/configs/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lenovo/a2010/configs/media_codecs.xml:system/etc/media_codecs.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml
@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
     com.android.future.usb.accessory    
 
 PRODUCT_COPY_FILES += \
-    device/Lenovo/A2010-a/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    device/lenovo/a2010/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
 
 # Audio componets from source
 PRODUCT_PACKAGES += \
