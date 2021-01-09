@@ -1,0 +1,12 @@
+# vendor (HW) 
+lib/gps.mt6735m.so
+lib/memtrack.mt6735m.so
+
+# Vendor (lib)
+lib/libbt-vendor.so
+lib/libmal.so
+lib/libmdfx.so
+
+# Vendor (bin)
+bin/memsicd3524x
+bin/qmcX983d
