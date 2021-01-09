@@ -90,7 +90,7 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 USE_CAMERA_STUB := true
 
 #recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.mt6735
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Assert
