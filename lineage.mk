@@ -4,7 +4,7 @@
 PRODUCT_RELEASE_NAME := A2010-a
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lenovo/A2010-a/device_A2010-a.mk)
