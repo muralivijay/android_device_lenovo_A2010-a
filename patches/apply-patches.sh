@@ -5,6 +5,7 @@ git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/A2010
 cd ../..
 cd system/core
 git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/A2010-a/patches/system_core/0001-Remove-CAP_SYS_NICE-from-surfaceflinger.patch
+git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/A2010-a/patches/system_core/0001-fix-ifx-thermal-spaming.patch
 #git apply -v ../../device/lenovo/A2010-a/patches/system_core/0002-Changes-for-more-level-log.patch
 cd ../..
 cd system/netd
