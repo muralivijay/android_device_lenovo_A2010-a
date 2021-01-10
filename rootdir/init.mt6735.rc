@@ -613,8 +613,14 @@ on post-fs-data
     chmod 0660 /dev/FM50AF
 	#liukun@wind-mobi.com 20150616 begin
     chmod 0660 /dev/BU6429AF
+	chmod 0660 /dev/BU6429116109AF
+	chmod 0660 /dev/BU6429116134AF
 	#liukun@wind-mobi.com 20150616 end
     chmod 0660 /dev/CAM_CAL_DRV
+    #oujiacheng@wind-mobi.com 2015.6.10 begin
+	chmod 0660 /dev/BU642911501AF
+	chmod 0660 /dev/BU642911502AF
+    #oujiacheng@wind-mobi.com 2015.6.10 end
     chown system camera /dev/camera-sysram
     chown system camera /dev/camera-isp
     chown system camera /dev/camera-fdvt
@@ -625,7 +631,14 @@ on post-fs-data
     chown system camera /dev/FM50AF
 	#liukun@wind-mobi.com 20150616 begin
     chown system camera /dev/BU6429AF
+	chown system camera /dev/BU6429116109AF
+	chown system camera /dev/BU6429116134AF
+	#liukun@wind-mobi.com 20150616 end
     chown system camera /dev/CAM_CAL_DRV
+    #oujiacheng@wind-mobi.com 2015.6.10 begin
+	chown system camera /dev/BU642911501AF
+	chown system camera /dev/BU642911502AF
+    #oujiacheng@wind-mobi.com 2015.6.10 end
     #flash
 	#liukun begin
 	chmod 0644 /dev/flash_torch
