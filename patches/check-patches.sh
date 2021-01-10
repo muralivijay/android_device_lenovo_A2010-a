@@ -5,6 +5,7 @@ cd ../..
 cd system/core
 git apply -v --check ../../device/lenovo/A2010-a/patches/system_core/0001-Remove-CAP_SYS_NICE-from-surfaceflinger.patch
 git apply -v --check ../../device/lenovo/A2010-a/patches/system_core/0001-fix-ifx-thermal-spaming.patch
+git apply -v --check ../../device/lenovo/A2010-a/patches/system_core/0001-mt6735-init-patches.patch
 cd ../..
 cd system/netd
 git apply -v --check ../../device/lenovo/A2010-a/patches/system_netd/0001-Revert-Don-t-start-tethering-if-IPv6-RPF-is-not-supp.patch
