@@ -1,7 +1,7 @@
 ## Specify phone tech before including full_phone
 
 # Release name
-PRODUCT_RELEASE_NAME := a2010
+PRODUCT_RELEASE_NAME := A2010-a
 
 # Inherit some common lineage stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -27,4 +27,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 # For twrp
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=A2010-a \
-    PRODUCT_NAME=A2010-a
+    PRODUCT_NAME=A2010-a \
+    TARGET_DEVICE=A2010-a

@@ -94,7 +94,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a2010
+TARGET_OTA_ASSERT_DEVICE := A2010-a
 
 #system.prop
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
