@@ -32,7 +32,6 @@ endif
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.rc \
     init.target.rc \
     init.mt6735.rc \
     init.ssd.rc \
