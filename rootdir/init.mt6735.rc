@@ -16,7 +16,7 @@ import init.target.rc
 
 on init
     # Symlink
-    export LD_PRELOAD libsigchain.so:libxlog.so:libmtk_symbols.so 
+    export LD_PRELOAD "libmtk_symbols.so"
     
     # Storage
     export USBOTG_STORAGE /storage/usbotg

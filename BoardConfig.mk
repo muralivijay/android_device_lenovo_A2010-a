@@ -146,7 +146,7 @@ BOARD_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
 # Symlink
-TARGET_LDPRELOAD += libxlog.so:libmtk_symbols.so
+TARGET_LDPRELOAD += libmtk_symbols.so
 
 # Init.rc
 TARGET_PROVIDES_INIT_RC := true

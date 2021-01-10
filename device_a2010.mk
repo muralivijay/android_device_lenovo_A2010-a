@@ -95,9 +95,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmtk_symbols \
 
-# xlog
+# Perf
 PRODUCT_PACKAGES += \
-    libxlog \
     libperfservicenative \
     libcurl
 
