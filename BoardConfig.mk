@@ -55,7 +55,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2
-BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive ## Permissive selinux
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive ## Permissive selinux
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x04000000
