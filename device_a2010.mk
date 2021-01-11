@@ -35,7 +35,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.mt6735.rc \
     init.ssd.rc \
-    init.xlog.rc \
     init.usb.rc \
     init.mt6735.usb.rc \
     init.aee.rc \

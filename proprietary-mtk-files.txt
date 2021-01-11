@@ -13,7 +13,6 @@ lib/libgui_ext.so
 
 # Thermal
 bin/thermal
-bin/thermald
 bin/thermal_manager
 lib/libmtcloader.so
 
@@ -26,7 +25,6 @@ bin/memsicd3524x
 bin/qmcX983d
 bin/6620_launcher
 bin/terservice
-bin/xlog
 bin/program_binary_service
 
 #RIL
