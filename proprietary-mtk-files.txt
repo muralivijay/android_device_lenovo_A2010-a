@@ -19,6 +19,7 @@ lib/libmtcloader.so
 # Others (lib)
 lib/libmal.so
 lib/libmdfx.so
+lib/libviagpsrpc.so
 
 # Others (bin)
 bin/memsicd3524x
