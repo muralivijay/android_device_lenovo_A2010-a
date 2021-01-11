@@ -1,1 +1,1 @@
-/dev/block/zram0                             none         swap    defaults      zramsize=419430400,zramstreams=3
+/dev/block/zram0                             none         swap    defaults      zramsize=1,048,576,000,zramstreams=3
