@@ -8,6 +8,7 @@ LOCAL_SRC_FILES := \
     mtk_xlog.cpp \
     icu55.c \
     icu53.c \
+    program_binary_service.cpp \
     ssl.c \
     netutils.c
 
