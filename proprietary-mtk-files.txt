@@ -2,11 +2,37 @@
 lib/gps.mt6735m.so
 lib/memtrack.mt6735m.so
 
-# Vendor (lib)
+# Bluetooth
 lib/libbt-vendor.so
+lib/libbluetooth_mtk.so
+
+# Display
+bin/guiext-server
+lib/libui_ext.so
+lib/libgui_ext.so
+
+# Thermal
+bin/thermal
+bin/thermald
+bin/thermal_manager
+lib/libmtcloader.so
+
+# Others (lib)
 lib/libmal.so
 lib/libmdfx.so
 
-# Vendor (bin)
+# Others (bin)
 bin/memsicd3524x
 bin/qmcX983d
+bin/6620_launcher
+bin/terservice
+bin/xlog
+bin/program_binary_service
+
+#RIL
+bin/mtkrild
+bin/mtkrildmd2
+lib/mtk-ril.so
+lib/mtk-rilmd2.so
+lib/librilmtkmd2.so
+lib/librilmtk.so

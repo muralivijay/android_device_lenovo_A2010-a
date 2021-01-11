@@ -7,7 +7,6 @@ lib/libcustom_prop.so
 lib/libbtstd.so
 lib/libextsys.so
 lib/libbluetoothem_mtk.so
-lib/libbluetooth_mtk.so
 lib/libbluetoothdrv.so
 bin/mtkbt
 lib/libadpcm.so
@@ -60,14 +59,6 @@ app/YGPS/YGPS.apk
 bin/mtk_agpsd
 etc/agps_profiles_conf2.xml
 
-#RIL
-bin/mtkrild
-bin/mtkrildmd2
-lib/mtk-ril.so
-lib/mtk-rilmd2.so
-lib/librilmtkmd2.so
-lib/librilmtk.so
-
 #WiFi
 etc/wifi/wpa_supplicant.conf
 etc/wifi/wpa_supplicant_overlay.conf
@@ -81,7 +72,6 @@ lib/libmsbc_mtk.so
 bin/mtk_setprop
 
 #bin
-bin/6620_launcher
 bin/6620_wmt_concurrency
 bin/6620_wmt_lpbk
 bin/aee
@@ -113,18 +103,11 @@ bin/orientationd
 bin/permission_check
 bin/pppd
 bin/pppd_dt
-bin/program_binary_service
 bin/s62xd
 bin/sn
-bin/terservice
-bin/thermal
-bin/thermald
-bin/thermal_manager
 bin/uiautomator
 bin/wifi2agps
 bin/wmt_loader
-bin/xlog
-bin/guiext-server
 bin/MtkCodecService
 bin/AcdApiDaemon
 
@@ -242,9 +225,7 @@ lib/libion_mtk.so
 lib/libm4u.so
 lib/libpq_prot.so
 lib/libbwc.so
-lib/libgui_ext.so
 -lib/libperfservice.so
-lib/libui_ext.so
 
 # PerfService settings
 etc/perfservscntbl.txt
@@ -299,6 +280,5 @@ lib/libvp8enc_sa.ca7.so
 lib/libvp9dec_sa.ca7.so
 
 # thermal_manager dependencies and profiles
-lib/libmtcloader.so
 etc/.tp/thermal.conf
 etc/.tp/thermal.off.conf
