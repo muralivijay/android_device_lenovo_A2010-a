@@ -55,7 +55,6 @@ vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 #GPS
-app/YGPS/YGPS.apk
 bin/mtk_agpsd
 etc/agps_profiles_conf2.xml
 

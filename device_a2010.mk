@@ -153,3 +153,8 @@ PRODUCT_SYSTEM_SERVER_JARS += com.cyanogenmod.keyhandler
 
 # Never dexopt the keyhandler
 $(call add-product-dex-preopt-module-config,com.cyanogenmod.keyhandler,disable)
+
+
+# YGPS
+PRODUCT_PACKAGES += \
+   YGPS
