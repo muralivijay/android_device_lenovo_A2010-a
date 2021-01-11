@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmtk_symbols \
 
+# libshims
+PRODUCT_PACKAGES += \
+   libshim_mmsdk
+
 # Perf
 PRODUCT_PACKAGES += \
     libperfservicenative \
