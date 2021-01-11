@@ -9,8 +9,8 @@ subsystem adf
 /dev/dkb                  0660   root       system
 /dev/seccfg               0660   root       system
 /dev/pro_info             0660	 root	    system
-/dev/otp 		  0660	 root	    system
-/dev/nvram 		   0660	 root	    system
+/dev/otp		  0660	 root	    system
+/dev/nvram		   0660	 root	    system
 /dev/misc		   0660	 root	    system
 /dev/misc2		   0660	 root	    system
 /dev/block/platform/mtk-msdc.0/by-name/misc2		   0660	 root	    system
@@ -51,8 +51,8 @@ subsystem adf
 /dev/dkb                  0660   root       system
 /dev/seccfg               0660   root       system
 /dev/pro_info             0660	 root	    system
-/dev/otp 		  0660	 root	    system
-/dev/nvram 		   0660	 root	    system
+/dev/otp		  0660	 root	    system
+/dev/nvram		   0660	 root	    system
 /dev/misc		   0660	 root	    system
 /dev/misc2		   0660	 root	    system
 /dev/block/platform/mtk-msdc.0/by-name/misc2		   0660	 root	    system
@@ -97,7 +97,7 @@ subsystem adf
 /dev/fm			 0660  system	   media
 
 # add the read write right of ttyUSB*
-/dev/bus/usb/*     	  0660   root       usb
+/dev/bus/usb/*            0660   root       usb
 /dev/ttyUSB0              0660   radio      radio
 /dev/ttyUSB1              0660   radio      radio
 /dev/ttyUSB2              0660   radio      radio
@@ -244,7 +244,6 @@ subsystem adf
 #MTK In-House TEE
 /dev/ttyACM0		  0660   radio	    radio
 
-
 # for lsm6ds3
 
 #common sensors files
@@ -347,7 +346,7 @@ subsystem adf
 /dev/btif                 0600  system system
 
 # add the read write right of ttyUSB*
-/dev/bus/usb/*     	      0660   root       usb
+/dev/bus/usb/*           0660   root       usb
 /dev/ttyUSB0              0660   radio      radio
 /dev/ttyUSB1              0660   radio      radio
 /dev/ttyUSB2              0660   radio      radio
@@ -404,4 +403,3 @@ subsystem adf
 
 # MTK In-House TEE
 /dev/ttyACM0		      0660   radio	    radio
-

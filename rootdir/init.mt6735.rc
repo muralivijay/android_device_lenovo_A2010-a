@@ -249,8 +249,6 @@ on post-fs-data
     chmod 666 /dev/mali0
     #chown system graphics /dev/mali
 
-
-
     # Touch Panel
     # chmod 0664 /dev/touch
     chown root diag /sys/module/tpd_setting/parameters/tpd_calmat
@@ -352,7 +350,7 @@ on post-fs-data
     chown system system /sys/class/misc/m_batch_misc/batchbatch
     chown system system /sys/class/misc/m_batch_misc/batchflush
 
-	chmod 0660 /sys/class/misc/m_gyro_misc/gyroenablenodata
+    chmod 0660 /sys/class/misc/m_gyro_misc/gyroenablenodata
     chmod 0660 /sys/class/misc/m_gyro_misc/gyroactive
     chmod 0660 /sys/class/misc/m_gyro_misc/gyrodelay
     chmod 0660 /sys/class/misc/m_gyro_misc/gyrobatch
@@ -412,18 +410,8 @@ on post-fs-data
     chown system system /sys/class/misc/m_baro_misc/barobatch
     chown system system /sys/class/misc/m_baro_misc/baroflush
 	
-	#dixiaobing@wind-mobi.com 20150525 start
-	#ps cali
-	chown system system /sys/class/meizu/ps/ps_calibration
-	chown system system /sys/class/meizu/ps/ps_offset
-	
-	#acc cali
-	chown system system /sys/class/meizu/acc/acc_calibration
-	chown system system /sys/class/meizu/acc/acc_x_offset
-	chown system system /sys/class/meizu/acc/acc_y_offset
-	chown system system /sys/class/meizu/acc/acc_z_offset
 	#dixiaobing@wind-mobi.com 20150525 end
-    #duanzhanyang@wind-mobi.com 20150620 begin
+        #duanzhanyang@wind-mobi.com 20150620 begin
 	chown system system /sys/devices/mx_leds/leds_mode
 	#duanzhanyang@wind-mobi.com 20150620 end
 
@@ -1505,6 +1493,7 @@ service backuprestore /system/bin/br_app_data_service
 #	user system
 #	group gps system radio
 #	class main
+
 service MtkCodecService /system/bin/MtkCodecService
     class main
     user system
