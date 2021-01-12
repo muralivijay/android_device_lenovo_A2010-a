@@ -44,6 +44,9 @@ lib/libmpoencoder.so
 lib/lib3a.so
 lib/libcam.utils.sensorlistener.so
 lib/libcamalgo.so
+lib/libimageio_FrmB.so
+lib/libcam.campipe.so
+lib/libimageio_plat_drv_FrmB.so
 
 #DRM
 vendor/lib/drm/libdrmwvmplugin.so
