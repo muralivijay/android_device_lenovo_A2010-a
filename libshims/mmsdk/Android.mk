@@ -1,9 +1,11 @@
 ####### mmsdk #######
 ## libshim_mmsdk
+LOCAL_PATH := $(my-dir)
+
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-	mmsdk/MediaBuffer.cpp
+	MediaBuffer.cpp \
 
 LOCAL_SHARED_LIBRARIES := \
 	libgui \
