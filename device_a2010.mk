@@ -49,7 +49,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/lenovo/a2010/prebuilt/system/etc/init/audioserver.rc:system/etc/init/audioserver.rc \
     device/lenovo/a2010/prebuilt/system/etc/init/mediacodec.rc:system/etc/init/mediacodec.rc \
-    device/lenovo/a2010/prebuilt/system/etc/init/cameraserver.rc:system/etc/init/cameraserver.rc \
     device/lenovo/a2010/prebuilt/system/etc/init/rild.rc:system/etc/init/rild.rc
 
 # Media
