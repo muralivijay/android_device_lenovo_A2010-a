@@ -1,7 +1,11 @@
 #!/bin/bash
 cd ../../../..
 cd frameworks/av
-git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/a2010/patches/frameworks_av/0001-Disable-usage-of-get_capture_position.patch 
+git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/a2010/patches/frameworks_av/0001-Disable-usage-of-get_capture_position.patch
+git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/a2010/patches/frameworks_av/frameworks_av_camera.patch
+git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/a2010/patches/frameworks_av/frameworks_av_hwcam.patch
+git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/a2010/patches/frameworks_av/frameworks_av_mediaprofile.patch
+git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/a2010/patches/frameworks_av/frameworks_av_libmedia.patch
 cd ../..
 cd frameworks/native
 git apply --ignore-space-change --ignore-whitespace -v ../../device/lenovo/a2010/patches/frameworks_native/0003-be-compatible-with-MTK-Lollipop-blobs.patch
