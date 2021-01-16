@@ -41,9 +41,11 @@
 //#include <utils/RefBase.h>
 //#include <utils/String8.h>
 #include <cutils/native_handle.h>
-#include <nativebase/nativebase.h>
+//#include <nativebase/nativebase.h>
+#include <system/window.h>
 #include "IBuffer.h"
 #include "CamFormat.h"
+#include "hardware/gralloc_extra.h"
 
 using namespace android::MtkCamUtils;
 
